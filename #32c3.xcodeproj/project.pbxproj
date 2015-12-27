@@ -13,7 +13,6 @@
 		CC412DE11A51DA9100FD5252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC412DDF1A51DA9100FD5252 /* Main.storyboard */; };
 		CC412DE31A51DA9100FD5252 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC412DE21A51DA9100FD5252 /* Images.xcassets */; };
 		CC412DE61A51DA9100FD5252 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC412DE41A51DA9100FD5252 /* LaunchScreen.xib */; };
-		CC412DFC1A51DAA600FD5252 /* Phonebook.json in Resources */ = {isa = PBXBuildFile; fileRef = CC412DFB1A51DAA600FD5252 /* Phonebook.json */; };
 		CC412E001A51DFD800FD5252 /* FGDatenSchleuder.m in Sources */ = {isa = PBXBuildFile; fileRef = CC412DFF1A51DFD800FD5252 /* FGDatenSchleuder.m */; };
 		CC78968B1A51F00000A3FD88 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC78968A1A51F00000A3FD88 /* CoreTelephony.framework */; };
 		CCCCDA3A1A52141100A99DA8 /* icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = CCCCDA361A52141100A99DA8 /* icon.psd */; };
@@ -31,7 +30,6 @@
 		CC412DE01A51DA9100FD5252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC412DE21A51DA9100FD5252 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CC412DE51A51DA9100FD5252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CC412DFB1A51DAA600FD5252 /* Phonebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Phonebook.json; sourceTree = "<group>"; };
 		CC412DFD1A51DFD800FD5252 /* #31c3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "#31c3-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC412DFE1A51DFD800FD5252 /* FGDatenSchleuder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGDatenSchleuder.h; sourceTree = "<group>"; };
 		CC412DFF1A51DFD800FD5252 /* FGDatenSchleuder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGDatenSchleuder.m; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				CCCCDA351A52141100A99DA8 /* Icon */,
-				CC412DFB1A51DAA600FD5252 /* Phonebook.json */,
 				CC412DDB1A51DA9100FD5252 /* AppDelegate.swift */,
 				CC412DDD1A51DA9100FD5252 /* ViewController.swift */,
 				C56802071C2FE5B2003ADB95 /* DatenSchleuder.swift */,
@@ -175,7 +172,6 @@
 				CC412DE61A51DA9100FD5252 /* LaunchScreen.xib in Resources */,
 				CC412DE31A51DA9100FD5252 /* Images.xcassets in Resources */,
 				CCCCDA3D1A52141100A99DA8 /* itunes.png in Resources */,
-				CC412DFC1A51DAA600FD5252 /* Phonebook.json in Resources */,
 				CCCCDA3B1A52141100A99DA8 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

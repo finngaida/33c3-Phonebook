@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--31c3 Phonebook-->
+        <!--32c3 Phonebook-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="_31c3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="_32c3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -35,7 +35,7 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0Bs-9G-Eta" secondAttribute="bottom" id="miR-6p-5nU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="31c3 Phonebook" id="haW-64-OeR"/>
+                    <navigationItem key="navigationItem" title="32c3 Phonebook" id="haW-64-OeR"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="HZR-YJ-Ffi" id="3LW-bj-tGg"/>
                         <outlet property="tableView" destination="0Bs-9G-Eta" id="9t2-mb-cuc"/>

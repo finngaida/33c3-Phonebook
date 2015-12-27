@@ -23,7 +23,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         isOnCCC = (CTTelephonyNetworkInfo().subscriberCellularProvider?.mobileNetworkCode == "42")
         loadData()
         
-        
         let bar = UISearchBar()
         barCtrl = UISearchDisplayController(searchBar: bar, contentsController: self)
         barCtrl.delegate = self
