@@ -1,4 +1,4 @@
-31c3-Phonebook
+32c3-Phonebook
 ==============
 
 This app is a work in progress, that takes the [eventphone phonebook](https://www.eventphone.de/guru2/phonebook) as a JSON file as an input and makes it available on your iPhone.
