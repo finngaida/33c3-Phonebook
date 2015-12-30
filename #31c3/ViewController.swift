@@ -10,7 +10,7 @@ import UIKit
 import CoreTelephony
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate {
-
+    
     @IBOutlet weak var tableView: UITableView!
     var barCtrl: UISearchDisplayController!
     var newBarCtrl: UISearchController!
@@ -60,7 +60,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         cell.textLabel?.text = data[indexPath.row].name
         
-        let number = UILabel(frame: CGRectMake(cell.frame.size.width-20, 0, 50, cell.frame.size.height))
+        let number = UILabel(frame: CGRectMake(cell.frame.size.width-50, 0, 50, cell.frame.size.height))
         number.backgroundColor = UIColor.clearColor()
         number.textColor = UIColor.darkGrayColor()
         number.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
@@ -105,9 +105,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String?) -> Bool {
         
-//        let predicate = NSPredicate(format: "name contains[c] %@", searchString!)
+        //        let predicate = NSPredicate(format: "name contains[c] %@", searchString!)
         data = data.filter({ (num) -> Bool in
-//            return predicate.evaluateWithObject(num.name)
+            //            return predicate.evaluateWithObject(num.name)
             
             let contains = num.name.rangeOfString(searchString!) != nil
             print("\(num.name) \(contains) \(searchString)")
@@ -127,12 +127,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.reloadData()
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
