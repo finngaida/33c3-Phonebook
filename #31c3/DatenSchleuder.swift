@@ -13,11 +13,11 @@ class DatenSchleuder: NSObject {
     class func phonebook() throws -> [Number] {
         
         do {
-            let data = try NSData(contentsOfURL: NSURL(string: "https://eventphone.de/guru2/phonebook?event=32C3&s=&page=1&format=json")!, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+            let data = try Data(contentsOf: URL(string: "https://eventphone.de/guru2/phonebook?event=33C3&s=&page=1&format=json")!, options: NSData.ReadingOptions.mappedIfSafe)
             
-            let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? [Dictionary<String, String>]
+            let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as? [Dictionary<String, String>]
             let res = json?.map({ (number) -> Number in
-                return Number(xtension: number["extension"]!, name: number["name"]!, type: PhoneType.Default, location: number["location"]!)
+                return Number(xtension: number["extension"]!, name: number["name"]!, type: PhoneType.default, location: number["location"]!)
             })
             
             return res!
@@ -31,7 +31,7 @@ class DatenSchleuder: NSObject {
 }
 
 enum PhoneType {
-    case Default
+    case `default`
 }
 
 struct Number {

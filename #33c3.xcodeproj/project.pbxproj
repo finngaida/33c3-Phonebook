@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		C56802071C2FE5B2003ADB95 /* DatenSchleuder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatenSchleuder.swift; sourceTree = "<group>"; };
-		CC412DD61A51DA9100FD5252 /* #32c3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "#32c3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC412DD61A51DA9100FD5252 /* #33c3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "#33c3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC412DDA1A51DA9100FD5252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC412DDB1A51DA9100FD5252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC412DDD1A51DA9100FD5252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				CC78968A1A51F00000A3FD88 /* CoreTelephony.framework */,
-				CC412DD81A51DA9100FD5252 /* #32c3 */,
+				CC412DD81A51DA9100FD5252 /* #33c3 */,
 				CC412DD71A51DA9100FD5252 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,12 +64,12 @@
 		CC412DD71A51DA9100FD5252 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC412DD61A51DA9100FD5252 /* #32c3.app */,
+				CC412DD61A51DA9100FD5252 /* #33c3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CC412DD81A51DA9100FD5252 /* #32c3 */ = {
+		CC412DD81A51DA9100FD5252 /* #33c3 */ = {
 			isa = PBXGroup;
 			children = (
 				CCCCDA351A52141100A99DA8 /* Icon */,
@@ -84,7 +84,7 @@
 				CC412DE41A51DA9100FD5252 /* LaunchScreen.xib */,
 				CC412DD91A51DA9100FD5252 /* Supporting Files */,
 			);
-			name = "#32c3";
+			name = "#33c3";
 			path = "#31c3";
 			sourceTree = "<group>";
 		};
@@ -110,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC412DD51A51DA9100FD5252 /* #32c3 */ = {
+		CC412DD51A51DA9100FD5252 /* #33c3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC412DF51A51DA9100FD5252 /* Build configuration list for PBXNativeTarget "#32c3" */;
+			buildConfigurationList = CC412DF51A51DA9100FD5252 /* Build configuration list for PBXNativeTarget "#33c3" */;
 			buildPhases = (
 				CC412DD21A51DA9100FD5252 /* Sources */,
 				CC412DD31A51DA9100FD5252 /* Frameworks */,
@@ -122,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = "#32c3";
+			name = "#33c3";
 			productName = "#31c3";
-			productReference = CC412DD61A51DA9100FD5252 /* #32c3.app */;
+			productReference = CC412DD61A51DA9100FD5252 /* #33c3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,16 +134,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Finn Gaida";
 				TargetAttributes = {
 					CC412DD51A51DA9100FD5252 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = PTHJ3DNH6P;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
-			buildConfigurationList = CC412DD11A51DA9100FD5252 /* Build configuration list for PBXProject "#32c3" */;
+			buildConfigurationList = CC412DD11A51DA9100FD5252 /* Build configuration list for PBXProject "#33c3" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -156,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC412DD51A51DA9100FD5252 /* #32c3 */,
+				CC412DD51A51DA9100FD5252 /* #33c3 */,
 			);
 		};
 /* End PBXProject section */
@@ -225,8 +226,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -235,6 +238,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -268,8 +272,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -277,6 +283,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -286,6 +293,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -298,10 +306,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "#31c3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.finngaida.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "#32c3";
+				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.33c3;
+				PRODUCT_NAME = "#33c3";
 				SWIFT_OBJC_BRIDGING_HEADER = "#31c3/#31c3-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -313,16 +322,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "#31c3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.finngaida.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "#32c3";
+				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.33c3;
+				PRODUCT_NAME = "#33c3";
 				SWIFT_OBJC_BRIDGING_HEADER = "#31c3/#31c3-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC412DD11A51DA9100FD5252 /* Build configuration list for PBXProject "#32c3" */ = {
+		CC412DD11A51DA9100FD5252 /* Build configuration list for PBXProject "#33c3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC412DF31A51DA9100FD5252 /* Debug */,
@@ -331,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC412DF51A51DA9100FD5252 /* Build configuration list for PBXNativeTarget "#32c3" */ = {
+		CC412DF51A51DA9100FD5252 /* Build configuration list for PBXNativeTarget "#33c3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC412DF61A51DA9100FD5252 /* Debug */,
